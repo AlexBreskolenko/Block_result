@@ -7,3 +7,5 @@ int EnterMessage(string str)
     return number;
 }
 
+var CreateArray = (int num) => new int[num];
+
