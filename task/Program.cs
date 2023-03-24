@@ -9,7 +9,7 @@ int EnterMessage(string str)
 
 var CreateArray = (int num) => new int[num];
 
-void PrintArray(int[] arr)
+void PrintArray(string[] arr)
 {
     for(int i = 0; i < arr.Length; i++)
     {
@@ -17,7 +17,7 @@ void PrintArray(int[] arr)
     }
 }
 
-void ResultingArray(int[] arr_1, int[] arr_2)
+void ResultingArray(string[] arr_1, string[] arr_2)
 {
     for(int i = 0; i < arr_1.Length; i++)
     {
@@ -28,8 +28,21 @@ void ResultingArray(int[] arr_1, int[] arr_2)
     }
 }
 
+void FillArray(string[] arr)
+{
+    string str = String.Empty;
+
+    for(int i = 0; i < arr.Length; i++)
+    {
+        str = Console.ReadLine();
+        arr[i] = str;
+    }
+}
+
+//=======================================================================================================
+
 int sizeArray = EnterMessage("Какой размер первоначального массива вы хотите создать ? : ");
-int[] arr_1 = CreateArray(sizeArray);
-int[] arr_2 = {};
+string[] arr_1 = CreateArray(sizeArray);
+string[] arr_2 = {};
 
 
